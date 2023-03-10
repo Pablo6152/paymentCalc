@@ -6,16 +6,16 @@ import Main from './components/Main/Main';
 
 function App() {
 
-  function searchBar(){
+  function toggleSearchBar(){
     console.log("Clicked")
+   
   } 
 
   return (
     <div className="App">
 
-      <Navbar 
-        searchBar={searchBar}
-      />
+      <Navbar searchBar={toggleSearchBar}/>
+
       <Main />
       
     

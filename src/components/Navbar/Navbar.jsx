@@ -10,11 +10,6 @@ export default function Navbar(props){
             <span onClick={props.searchBar} className="material-icons navbar-item">
             search
             </span>
-
-            <input type="text" className="searchbar-item search-input" />
-            <span className="material-icons searchbar-item">
-            clear
-            </span>
             
         </nav>
     )

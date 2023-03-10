@@ -40,7 +40,7 @@ ul{
 
 /** Navbar **/
 
-.nav-container{
+.nav-container, .search-bar{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -62,21 +62,24 @@ ul{
 }
 
 /* Search bar */
+.search-bar{
+
+}
+
 .navbar-item{
-  display: none;
+  display: block;
 }
 .searchbar-item{
-  display: block;
+  display: flex;
 }
 .search-input{
   background-color: var(--tertiary-color);
-  outline: none;
-  border: none;
+  transform: translateZ(0);
   border-radius: 7px;
 
   padding: .4em 2em;
 
-  outline: 1px solid var(--text-color);
+  border: 1px solid var(--text-color);
 
   -webkit-box-shadow: 0px 120px 300px 5px rgb(255, 255, 255);
   -moz-box-shadow: 0px 120px 300px 5px rgb(255, 255, 255);
