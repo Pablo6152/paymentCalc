@@ -3,8 +3,8 @@ const head = document.getElementById("head")
 const themeBtn = document.getElementById("toggle-theme")
 
 // When page loads
-function loadTheme(){
-    if (JSON.parse(darkmode)){
+function loadTheme(darkState){
+    if (JSON.parse(darkState)){
         getTheme(1)
     }
 }
@@ -14,11 +14,9 @@ function getTheme(theme) {
     let root = document.documentElement;
     if (theme === 0) {
         // Black
-        root.style.setProperty('--primary-color', '#1c1c1e');
-        root.style.setProperty('--secondary-color', '#000000');
+        root.style.setProperty('--primary-color', '#000000');
+        root.style.setProperty('--secondary-color', '#1c1c1e');
         root.style.setProperty('--tertiary-color','rgba(28,28,30,255)')
-        root.style.setProperty('--blur-color','rgba(75, 75, 75, 0.644)')
-        
         root.style.setProperty('--text-color', '#ffffff');
         root.style.setProperty('--primary-accent-color', '#0b84fe');
         root.style.setProperty('--secondary-accent-color', '#2ed158');
@@ -30,8 +28,6 @@ function getTheme(theme) {
         root.style.setProperty('--primary-color', '#ffffff');
         root.style.setProperty('--secondary-color', '#f0f0f0');
         root.style.setProperty('--tertiary-color','rgba(227,227,232,255)')
-        root.style.setProperty('--blur-color','rgba(226, 226, 226, 0.744)')
-
         root.style.setProperty('--text-color', '#000000');
         root.style.setProperty('--primary-accent-color', '#007aff'); 
         root.style.setProperty('--secondary-accent-color', '#35c759');

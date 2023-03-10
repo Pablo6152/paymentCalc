@@ -1,8 +1,7 @@
 :root{
   --primary-color: #000000;
-  --secondary-color: rgba(28,28,29,255);
+  --secondary-color: #1c1c1e;
   --tertiary-color: rgba(28,28,30,255);
-  --blur-color: rgba(26, 26, 26, 0.744);
   --text-color: #fff;
 }
 
@@ -166,45 +165,106 @@ ul{
 
 /* Sidebar*/
 .sidebar-container{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  
+  grid-template-areas: "."
+                       "t"
+                       "."
+                       "p"
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "."
+                       "s"
+                       "."
+                       ".";
+  
+    justify-content: center;
 
-  /* padding: 1em 0; */
-  padding-right: 0;
 
-  backdrop-filter: blur(10px);
-  background-color: var(--blur-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
 
   position: fixed;
   left: 0;
 
-  height: 100%;
-  width: 60%;
+  height: 100vh;
+  max-height: 100vh;
+  width: 55%;
 
   box-shadow: 90px 30px 300px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.92);
 
   
 }
+.sidebar-title{
+  grid-area: t;
+}
+.pages-container{
+  grid-area: p;
+}
+
+.settings-container{
+  grid-area: s;
+
+  border-top: 1px rgba(158, 158, 158, 0.36) solid;
+
+  padding-top: 1em;
+}
+
+.sidebar-title{
+  width: 100%;
+  text-align: center;
+
+  border-bottom: 1px rgba(158, 158, 158, 0.36) solid;
+  margin-top: .5em;
+}
 
 .sidebar-item{
-  padding: 1em 0; /* Might cause unintended click while on mobile */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   
-  width: 100%;
-  border-bottom: 1px rgba(75, 75, 75, 0.644) solid;
+  margin: 0 auto;
+
+  padding: .5em 1em;
+  
+  border-radius: 14px;
+
+  
+  color: var(--text-color);
+
+  align-items: center;
+  cursor: pointer;
+  
 }
+
+.sidebar-item:hover{
+  background-color: var(--secondary-color);
+}
+
 .sidebar-item-name{
-  padding-left: 1em;
+  font-size: 1rem;
   color: var(--text-color);
 }
 
 .sidebar-item > span {
-  padding-right: 1em;
+  padding-right: .5em;
+  font-size: 2rem;
 }
 
+.sidebar-global-item-propeties{
+  width: 100%;
+}
 
 .sidebar-bg{
 
@@ -217,4 +277,8 @@ ul{
   height: 100%;
   width: 100%;
 
+}
+
+.theme-toggle-on{
+  color: rgba(0, 102, 255, 0.92);
 }
