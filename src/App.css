@@ -2,6 +2,7 @@
   --primary-color: #000000;
   --secondary-color: rgba(28,28,29,255);
   --tertiary-color: rgba(28,28,30,255);
+  --blur-color: rgba(26, 26, 26, 0.744);
   --text-color: #fff;
 }
 
@@ -172,7 +173,7 @@ ul{
   padding-right: 0;
 
   backdrop-filter: blur(10px);
-  background-color: rgba(28,28,29,.90);
+  background-color: var(--blur-color);
   color: var(--text-color);
 
   position: fixed;
@@ -197,6 +198,7 @@ ul{
 }
 .sidebar-item-name{
   padding-left: 1em;
+  color: var(--text-color);
 }
 
 .sidebar-item > span {

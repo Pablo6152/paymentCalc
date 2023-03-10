@@ -13,7 +13,7 @@ export default function SideBar(props){
                 <div className="sidebar-item">
                     <p className="sidebar-item-name">My week</p>
                 </div>
-                <div className="sidebar-item dark-mode" onClick={props.toggleDarkMode}>
+                <div className="sidebar-item dark-mode" onClick={props.toggleTheme}>
                     <p className="sidebar-item-name">Dark mode</p>
                     <span className="material-symbols-outlined">
                         dark_mode
