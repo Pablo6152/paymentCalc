@@ -4,7 +4,7 @@ export default function SearchBar(props){
         
         <nav className="search-bar">
             <input type="text" className="searchbar-item search-input" />
-            <span onClick={props.searchBar} className="material-icons searchbar-item">
+            <span onClick={props.searchBarToggle} className="material-icons searchbar-item">
             clear
             </span>
         </nav>

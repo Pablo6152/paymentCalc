@@ -1,7 +1,7 @@
-export default function MiniBox(){
+export default function MiniBox(props){
     return (
         <div className="minibox-container">
-            <h2>This is where the mini boxes will be</h2>
+            <h2>{props.text}</h2>
         </div>
     )
 }

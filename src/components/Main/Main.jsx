@@ -25,8 +25,7 @@ export default function Main(){
     return (
         <div className="main-container">
             <MiniBox 
-            
-
+                text="This is prop test"
             />
             {userBoxes}
         </div>
