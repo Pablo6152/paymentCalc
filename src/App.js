@@ -21,12 +21,13 @@ function App() {
   function handleThemeChange(){
     toggleTheme()
     setDarkMode(darkMode === 1 ? 0 : 1)
+
+
   }
   
   // console.log(`Local Storage ${localStorage.getItem("darkmode")}`)
   // console.log(`React state ${darkMode}`)
   
-
   function searchBarToggle(){
     setShowSearchBar(!showSearchBar)
 
@@ -38,15 +39,18 @@ function App() {
   }
 
 
-
   return (
     <div className="App">
    
       {showSearchBar === true ? <SearchBar searchBarToggle={searchBarToggle}/> : <Navbar sideMenuToggle={sideMenuToggle} searchBarToggle={searchBarToggle}/>}
       
-      {showSideBar ? <SideBar sideMenuToggle={sideMenuToggle} handleThemeChange={handleThemeChange}/> : ""}
+      {showSideBar ? <SideBar 
+                        sideMenuToggle={sideMenuToggle} 
+                        handleThemeChange={handleThemeChange}
+                        toggleState={darkMode ? "toggle_off" : "toggle_on"}
+                        active={darkMode ? "" : "btn-active"}
+                      /> : ""}
       
-
       <Main />
       
     </div>

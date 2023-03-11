@@ -7,24 +7,61 @@ export default function SideBar(props){
 
             <div className="sidebar-container">
 
-                    <h2 className="sidebar-title">My app</h2>
+                    <h2 className="sidebar-title">👑My app👑</h2>
 
                     <div className="pages-container sidebar-global-item-propeties">
                         <div className="sidebar-item">
-                            <span className="material-symbols-outlined">home</span>
+                            <span className="material-symbols-outlined home-icon">home</span>
                             <p className="sidebar-item-name">Home</p>
                         </div>
                         <div className="sidebar-item">
-                            <span className="material-symbols-outlined">calendar_month</span>
+                            <span className="material-symbols-outlined add-icon">add_circle</span>
+                            <p className="sidebar-item-name">Add a new record</p>
+                        </div>
+                        <div className="sidebar-item">
+                            <span className="material-symbols-outlined calendar-icon">calendar_month</span>
                             <p className="sidebar-item-name">My week</p>
+                        </div>
+                        <div className="sidebar-item">
+                        <span class="material-symbols-outlined summary-icon">payments</span>
+                            <p className="sidebar-item-name">Summary</p>
                         </div>
                     </div>
 
+
                     <div className="settings-container sidebar-global-item-propeties">
-                        <div className="sidebar-item dark-mode" onClick={props.handleThemeChange}>
-                            <span className="material-symbols-outlined theme-toggle-on">toggle_on</span>
+
+                        <div className={`sidebar-item dark-mode ${props.active}`} onClick={props.handleThemeChange}>
+
+                            <span className="material-symbols-outlined theme-toggle-on">
+                                {props.toggleState}
+                            </span>
+
                             <p className="sidebar-item-name">Dark mode</p>
+                            
                         </div>
+
+                        <div className="sidebar-item settings-item">
+                            <span className="material-symbols-outlined">
+                                info
+                            </span>
+                            <p className="sidebar-item-name">About me</p>
+                        </div>
+
+                        <div className="sidebar-item settings-item">
+                            <span className="material-symbols-outlined">
+                                help
+                            </span>
+                            <p className="sidebar-item-name">How to use the app</p>
+                        </div>
+
+                        <div className="sidebar-item settings-item">
+                            <span className="material-symbols-outlined">
+                                settings
+                            </span>
+                            <p className="sidebar-item-name">Settings</p>
+                        </div>
+                        
                     </div>
 
             </div>

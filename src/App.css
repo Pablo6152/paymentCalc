@@ -163,7 +163,9 @@ ul{
   width: 100%;
 }
 
-/* Sidebar*/
+/*           Sidebar              */
+
+
 .sidebar-container{
   display: grid;
   
@@ -201,11 +203,11 @@ ul{
   left: 0;
 
   height: 100vh;
-  max-height: 100vh;
-  width: 55%;
+  min-width: 55%;
 
-  box-shadow: 90px 30px 300px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.92);
 
+
+  padding: 0 1em;
   
 }
 .sidebar-title{
@@ -248,18 +250,26 @@ ul{
   
 }
 
-.sidebar-item:hover{
+.btn-active{
   background-color: var(--secondary-color);
+
 }
 
 .sidebar-item-name{
   font-size: 1rem;
   color: var(--text-color);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar-item > span {
   padding-right: .5em;
   font-size: 2rem;
+}
+.settings-item{
+  margin-top: 1em;
 }
 
 .sidebar-global-item-propeties{
@@ -274,6 +284,9 @@ ul{
   left: 0;
   right: 0;
 
+  background-color: rgba(1, 1, 1, .7);
+  backdrop-filter: blur(10px);
+
   height: 100%;
   width: 100%;
 
@@ -281,4 +294,20 @@ ul{
 
 .theme-toggle-on{
   color: rgba(0, 102, 255, 0.92);
+}
+
+/* Sidebar Icons */
+
+.home-icon{
+  color: var(--text-color);
+}
+.calendar-icon{
+  color: palevioletred;
+  font-weight: 500;
+}
+.summary-icon{
+  color: green;
+}
+.add-icon{
+  color: rgb(96, 93, 255);
 }
