@@ -23,7 +23,7 @@ export default function SideBar(props){
                             <p className="sidebar-item-name">My week</p>
                         </div>
                         <div className="sidebar-item">
-                        <span class="material-symbols-outlined summary-icon">payments</span>
+                        <span className="material-symbols-outlined summary-icon">payments</span>
                             <p className="sidebar-item-name">Summary</p>
                         </div>
                     </div>
@@ -53,6 +53,11 @@ export default function SideBar(props){
                                 help
                             </span>
                             <p className="sidebar-item-name">How to use the app</p>
+                        </div>
+
+                        <div className="sidebar-item settings-item">
+                            <span className="material-symbols-outlined">handshake</span>
+                            <p className="sidebar-item-name">Give your opinion</p>
                         </div>
 
                         <div className="sidebar-item settings-item">

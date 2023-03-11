@@ -150,6 +150,9 @@ ul{
 }
 .image-item{
   width: 100%;
+  object-fit: cover;
+
+  border-radius: 7px;
 }
 
 
@@ -169,8 +172,11 @@ ul{
 .sidebar-container{
   display: grid;
   
-  grid-template-areas: "."
-                       "t"
+  border-right: 1px rgb(4, 0, 255) solid;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  grid-template-areas: "t"
                        "."
                        "p"
                        "."
@@ -190,6 +196,7 @@ ul{
                        "."
                        "."
                        "s"
+                       "."
                        "."
                        ".";
   
@@ -274,6 +281,7 @@ ul{
 
 .sidebar-global-item-propeties{
   width: 100%;
+  
 }
 
 .sidebar-bg{
@@ -289,7 +297,6 @@ ul{
 
   height: 100%;
   width: 100%;
-
 }
 
 .theme-toggle-on{
