@@ -30,10 +30,10 @@ export default function SideBar(props){
                             <span className="material-symbols-outlined timeline-icon">timeline</span>
                             <p className="sidebar-item-name">Timeline</p>
                         </div>
-                        <div className="sidebar-item">
+                        {/* <div className="sidebar-item">
                             <span className="material-symbols-outlined simulate-icon">auto_graph</span>
                             <p className="sidebar-item-name">Simulate</p>
-                        </div>
+                        </div> */}
                         <div className="sidebar-item">
                             <span className="material-symbols-outlined description-icon">description</span>
                             <p className="sidebar-item-name">Your data</p>
@@ -67,10 +67,10 @@ export default function SideBar(props){
                             <p className="sidebar-item-name">How to use the app</p>
                         </div>
 
-                        <div className="sidebar-item settings-item">
+                        {/* <div className="sidebar-item settings-item">
                             <span className="material-symbols-outlined">handshake</span>
                             <p className="sidebar-item-name">Give your opinion</p>
-                        </div>
+                        </div> */}
 
                         <div className="sidebar-item settings-item">
                             <span className="material-symbols-outlined">

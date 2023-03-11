@@ -15,23 +15,16 @@ function App() {
 
   React.useEffect(x => {
     loadTheme(darkMode)
-    // console.log("Effect Ran")
+
   },[darkMode])
   
   function handleThemeChange(){
     toggleTheme()
     setDarkMode(darkMode === 1 ? 0 : 1)
-
-
   }
-  
-  // console.log(`Local Storage ${localStorage.getItem("darkmode")}`)
-  // console.log(`React state ${darkMode}`)
   
   function searchBarToggle(){
     setShowSearchBar(!showSearchBar)
-
-    return showSearchBar
   }
 
   function sideMenuToggle(){

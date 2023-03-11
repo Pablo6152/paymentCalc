@@ -172,36 +172,16 @@ ul{
 .sidebar-container{
   display: grid;
   
-  border-right: 1px var(--text-color) solid;
+  
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 
   grid-template-areas: "t"
-                       "."
-                       "."
                        "p"
                        "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "."
-                       "s"
-                       "."
-                       "."
-                       ".";
+                       "s";
   
-    justify-content: center;
-
+  justify-content: center;
 
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -212,24 +192,23 @@ ul{
   height: 100vh;
   min-width: 55%;
 
-
-
   padding: 0 1em;
   
 }
 .sidebar-title{
   grid-area: t;
+
 }
 .pages-container{
   grid-area: p;
+  border-bottom: 1px rgba(158, 158, 158, 0.36) solid;
 }
 
 .settings-container{
   grid-area: s;
 
-  border-top: 1px rgba(158, 158, 158, 0.36) solid;
+  
 
-  padding-top: 1em;
 }
 
 .sidebar-title{
@@ -275,9 +254,9 @@ ul{
   padding-right: .5em;
   font-size: 2rem;
 }
-.settings-item{
+/* .settings-item{
   margin-top: 1em;
-}
+} */
 
 .sidebar-global-item-propeties{
   width: 100%;
