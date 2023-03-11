@@ -172,14 +172,14 @@ ul{
 .sidebar-container{
   display: grid;
   
-  border-right: 1px rgb(4, 0, 255) solid;
+  border-right: 1px var(--text-color) solid;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 
   grid-template-areas: "t"
                        "."
-                       "p"
                        "."
+                       "p"
                        "."
                        "."
                        "."
@@ -317,4 +317,13 @@ ul{
 }
 .add-icon{
   color: rgb(96, 93, 255);
+}
+.timeline-icon{
+  color: rgb(202, 0, 168);
+}
+.simulate-icon{
+  color: rgb(0, 255, 42);
+}
+.description-icon{
+  color: var(--text-color);
 }

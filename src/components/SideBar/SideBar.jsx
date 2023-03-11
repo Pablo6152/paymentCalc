@@ -23,8 +23,20 @@ export default function SideBar(props){
                             <p className="sidebar-item-name">My week</p>
                         </div>
                         <div className="sidebar-item">
-                        <span className="material-symbols-outlined summary-icon">payments</span>
+                            <span className="material-symbols-outlined summary-icon">payments</span>
                             <p className="sidebar-item-name">Summary</p>
+                        </div>
+                        <div className="sidebar-item">
+                            <span className="material-symbols-outlined timeline-icon">timeline</span>
+                            <p className="sidebar-item-name">Timeline</p>
+                        </div>
+                        <div className="sidebar-item">
+                            <span className="material-symbols-outlined simulate-icon">auto_graph</span>
+                            <p className="sidebar-item-name">Simulate</p>
+                        </div>
+                        <div className="sidebar-item">
+                            <span className="material-symbols-outlined description-icon">description</span>
+                            <p className="sidebar-item-name">Your data</p>
                         </div>
                     </div>
 
